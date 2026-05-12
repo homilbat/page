@@ -23,7 +23,7 @@ export default function Home() {
           }}
         >
           <h1 className="text-[2rem] md:text-[3rem] font-bold text-gray-900 mb-2 leading-tight bg-white/80 px-10 py-5 rounded-2xl shadow-sm backdrop-blur-sm">
-            종혁과함께 더 빠르게 더 잘<br/>전문가같이 쓰세요
+            종혁과함께 더 빠르게<br/>더 전문가같이 더 잘 쓰세요
           </h1>
         </div>
 
