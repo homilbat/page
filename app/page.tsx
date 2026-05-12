@@ -27,11 +27,11 @@ export default function Home() {
           </h1>
         </div>
 
-        {/* 상단 네비게이션 통일 영역 (기존 메뉴를 흰색 배경으로 덮어씀) */}
-        <div className="absolute top-0 right-0 w-[60%] h-[80px] bg-white z-20 flex items-center justify-end gap-8 md:gap-12 px-10">
-          <Link href="/" className="cursor-pointer text-gray-800 hover:text-blue-600 font-bold text-[16px] md:text-[18px] whitespace-nowrap transition-colors">기능</Link>
-          <Link href="/pricing" className="cursor-pointer text-gray-800 hover:text-blue-600 font-bold text-[16px] md:text-[18px] whitespace-nowrap transition-colors">요금제</Link>
-          <Link href="/faq" className="cursor-pointer text-gray-800 hover:text-blue-600 font-bold text-[16px] md:text-[18px] whitespace-nowrap transition-colors">자주 묻는 질문</Link>
+        {/* 상단 네비게이션 투명 클릭 영역 (이미지에 디자인이 포함되어 있으므로 영역만 지정) */}
+        <div className="absolute top-0 right-0 w-[70%] h-[80px] z-20 flex items-center justify-end">
+          <Link href="/" className="w-[15%] h-full cursor-pointer" title="기능" />
+          <Link href="/pricing" className="w-[15%] h-full cursor-pointer" title="요금제" />
+          <Link href="/faq" className="w-[20%] h-full cursor-pointer mr-[2%]" title="자주 묻는 질문" />
         </div>
         
         {/* 로고 영역 클릭 (홈으로) */}
