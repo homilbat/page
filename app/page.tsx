@@ -11,19 +11,7 @@ export default function Home() {
           className="max-w-full h-auto block"
         />
 
-        {/* 
-          메인 텍스트 변경을 위한 오버레이 
-        */}
-        <div
-          className="absolute z-10 flex flex-col justify-center items-center text-center px-4"
-          style={{
-            top: "20%",
-            left: "0%",
-            width: "100%",
-          }}
-        >
 
-        </div>
 
         {/* 상단 네비게이션 투명 클릭 영역: 왼쪽(홈), 가운데(요금제), 오른쪽(FAQ) 3등분 */}
         <div className="absolute top-0 left-0 w-full h-[5%] z-20 flex">
