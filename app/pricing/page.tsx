@@ -1,21 +1,16 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function Pricing() {
   return (
     <div className="w-full flex justify-center bg-[#f3f4f6]">
-      <div className="relative max-w-[562px] w-full shadow-lg">
-        {/* Main Image */}
+      <div className="relative max-w-[724px] w-full shadow-lg">
         <img
-          src="/design/main.png"
-          alt="Main Screen Prototype"
+          src="/design/price.png"
+          alt="Pricing Prototype"
           className="w-full h-auto block"
         />
 
-        {/* 
-          상단 네비게이션 클릭 영역 그룹 
-          (이 박스의 top, left, width, height를 조절해서 
-          이미지의 "기능 | 요금제 | 자주 묻는 질문" 부분에 덮어씌우세요)
-        */}
+        {/* 상단 네비게이션 클릭 영역 그룹 */}
         <div 
           className="absolute flex z-10"
           style={{
@@ -25,15 +20,18 @@ export default function Home() {
             height: "5%",    /* 전체 메뉴 영역의 세로 길이 */
           }}
         >
-          {/* 기능 (현재 기능 페이지는 없으므로 #처리 하거나 나중에 추가) */}
           <Link href="/" className="flex-1 cursor-pointer" title="기능" />
-          
-          {/* 요금제 */}
           <Link href="/pricing" className="flex-1 cursor-pointer" title="요금제" />
-          
-          {/* 자주 묻는 질문 (글자가 더 기니까 flex 비율을 더 크게 줄 수 있음) */}
           <Link href="/faq" className="flex-[1.5] cursor-pointer" title="자주 묻는 질문" />
         </div>
+        
+        {/* 상단 왼쪽 로고 클릭 영역 (메인으로 이동) */}
+        <Link 
+          href="/"
+          className="absolute z-10"
+          style={{ top: "2%", left: "5%", width: "15%", height: "8%" }}
+          title="로고 (홈으로)"
+        />
       </div>
     </div>
   );
